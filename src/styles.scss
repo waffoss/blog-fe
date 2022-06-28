@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: black;
+}
+
+.wrapper {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+@custom-media --phone only screen and (max-width: 768px);
+@custom-media --medium only screen and (min-width: 768px) and (max-width: 1366px);
+@custom-media --desktop only screen and (min-width: 1366px);
